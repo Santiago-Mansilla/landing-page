@@ -19,31 +19,37 @@ header {
     align-items: center;
     color: white;
     padding: 10px 80px;
-    height: 150px;
-    background: rgba( 109, 6, 6, 0.8 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    
+    height: 100px;
+    background: rgba( 109, 3, 3, 0.75 );
+    border-radius: 50px;
+    position: fixed;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    margin-top: 20px;
+
     
         
 }
 
 a {
     color: inherit;
+
 }
 
 .navbar {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 40px;
+    
+    
 }
 
 .nav-list {
     display: flex;
     gap: 20px;
-    font-size: 25px;
+    font-size: 20px;
     
     
     
@@ -51,6 +57,6 @@ a {
 
 
 .logo {
-    height: 150px;
+    height: 100px;
 }
 
