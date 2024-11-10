@@ -65,18 +65,17 @@ a {
 #hero {
     height: 55vh;
     display: flex;
-    max-width: 1200px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     text-align: center;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/freepik__photo-fresh-croissants-on-a-bakery-pattern-backgro__65629.jpeg);
     background-size: cover;
     background-position: center;
-    margin: 0 auto;
     box-shadow: 50%;
-    padding-left: 15%;
-    border-radius: 30px;
+    
+    
 }
    
 
@@ -84,7 +83,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
     color: white;
 }
 
@@ -105,3 +104,116 @@ a {
    
     
 }
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: white;
+    gap: 30px;
+    color: grey;
+    height: 70%;
+    padding: 70px;
+
+}
+
+.cards-container {
+    display: flex;
+    gap: 150px;
+    padding: 80px;
+    
+    
+    
+}
+
+.cards-container img {
+    height: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.service { 
+    height: 55vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/pizzas.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 50%;
+    padding-left: 80px;
+}
+
+.service h2 {
+    font-size: 40px;
+}
+
+.service-info { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    color: white;
+}
+
+.service-info p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.service-info a {
+    font-size: 30px;
+    background: brown;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    color: brown;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    }
