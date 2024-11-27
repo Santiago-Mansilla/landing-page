@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La abuela Ana</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mq.css">
+    
+
 </head>
 <body>
     <header>
+        <a href="#hero">
+            <img src="./img/Ana.png" alt="Logo Panaderia" class="logo">
+        </a>
         
-        <a href=""><img src="./img/Ana.png" alt="Logo Panaderia" class="logo"></a>
-            
         <nav class="navbar">
-        
-                
-                    <ul class="nav-list">
-                        <li><a href="#hero"><strong>Home</strong></a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Nuestros clientes</a></li>
-                        <li><a href="#about">Sobre nosotros</a></li>
-                    </ul>
-                
-            </nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu_hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </label>
+            
+            <ul class="nav-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#about">Sobre nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main> 
         <section id="hero">
@@ -45,7 +53,7 @@
 
                         </div>
                         <h3>Panes y facturas</h3>
-                        <p>Nuestros artesanos mezclan la cantidad perfecta <br> de ingredientes y hornean el pan usando la <br> temperatura idónea del horno, obteniendo siempre <br> un resultado único.</p>
+                        <p>Nuestros artesanos mezclan la cantidad perfecta de ingredientes y hornean el pan usando la temperatura idónea del horno, obteniendo siempre un resultado único.</p>
                     </div>
                     <div class="card">
                         <div class="card-top">
@@ -53,7 +61,7 @@
 
                         </div>
                         <h3>Pastelería y repostería</h3>
-                        <p>Nuestra pastelería artesanal se destaca en la <br> preparación, cocción y decoración de platos y <br> piezas dulces tales como tortas, pasteles, mini <br>tortas y muchos más.</p>
+                        <p>Nuestra pastelería artesanal se destaca en la preparación, cocción y decoración de platos y piezas dulces tales como tortas, pasteles, mini tortas y muchos más.</p>
                     </div>
                     <div class="card">
                         <div class="card-top">
@@ -61,7 +69,7 @@
 
                         </div>
                         <h3>Servicios de Lunch y Comidas</h3>
-                        <p>Conocé nuestras comidas y Lunchs. Trabajamos <br> con la experiencia y la dedicación que nuestros <br> clientes merecen, elaborando alimentos frescos <br> con materia prima de primera calidad.</p>
+                        <p>Conocé nuestras comidas y Lunchs. Trabajamos con la experiencia y la dedicación que nuestros clientes merecen, elaborando alimentos frescos con materia prima de primera calidad.</p>
                     </div>
                 </div>
             </section>
@@ -86,8 +94,40 @@
                         <img src="./img/bakery.webp" alt="Panadería artesanal">
                     </div>
                 </section>
+
+                <footer>
+                    <div class="footer-container">
+                        <div id="contact">
+                            <div class="footer-item">
+                                <h3>Llamanos</h3>
+                                <p><a href="">4573-4270</a></p>
+                            </div>
+                            <div class="footer-item">
+                                <h3>Email</h3>
+                                <p><a href="">panadería@abuana.com.ar</a></p>
+                            </div>
+                            <div class="footer-item">
+                                <h3>Visitanos</h3>
+                                <p>Aizpurúa 3302, Villa Urquiza</p>
+                            </div>
+                            <div class="footer-item">
+                                <h3>Abrimos</h3>
+                                <p>Lunes a Sábado: 7:00 - 20:00 hs.</p>
+                                <p>Domingo: 7:00 - 18:00 hs.</p>
+                            </div>
+                        </div>
+                        <div class="footer-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.3095760724827!2d-58.50372272361775!3d-34.57103255577386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6f891512991%3A0x1ffff499124b4f7d!2sAizpur%C3%BAa%203302%2C%20C1431ERT%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1731863320460!5m2!1ses-419!2sar" width="400" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="footer-text">
+                        <p>© 2024 Panaderia "La abuela ana". Todos los derechos reservados.</p>
+                    </div>
+                </footer>
+                   
                 
 
     </main>
+    
 </body>
 </html>

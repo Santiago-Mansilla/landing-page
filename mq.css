@@ -1,0 +1,156 @@
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    .cards-container {
+        gap: 50px;
+        padding: 40px 20px;
+    }
+
+    .hero-info h1 {
+        font-size: 60px;
+    }
+
+    #about {
+        margin: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .menu_hamburguesa {
+        display: block;
+        z-index: 1000;
+        transition: transform 0.3s ease;
+    }
+
+    .menu_hamburguesa:hover {
+        transform: scale(1.1);
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 100px);
+        background: rgba(60,59,58,0.98);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 40px;
+        transition: left 0.3s ease;
+        z-index: 999;
+        transition: left 0.3s ease-in-out;
+    }
+
+    #menu-toggle:checked ~ .nav-list {
+        left: 0;
+        transition: left 0.3s ease-in-out;
+    }
+
+    
+    .hero-info h1 {
+        font-size: 40px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    .about-content,
+    .about-image {
+        width: 100%;
+    }
+
+    .service h2 {
+        font-size: 32px;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-item {
+        text-align: center;
+    }
+
+    #contact {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .hero-info h1 {
+        font-size: 32px;
+    }
+
+    .hero-info a,
+    .service-info a {
+        font-size: 20px;
+        padding: 12px 24px;
+    }
+
+    .products-container {
+        padding: 40px 15px;
+    }
+
+    .service h2 {
+        font-size: 28px;
+    }
+
+    .about-content h2 {
+        font-size: 2em;
+    }
+
+    .footer-map {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero-info h1 {
+        font-size: 28px;
+    }
+
+    .service h2 {
+        font-size: 24px;
+    }
+
+    .about-content h2 {
+        font-size: 1.8em;
+    }
+}
